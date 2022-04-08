@@ -1,73 +1,65 @@
-
-
 class Data:
-    
-    @statictmethod
+    @staticmethod
     def get_companies():
-        
+
         companies = [
             {
-                'id': 1,
-                'name': 'Empresa Uno',
-                'nit': '123456789',
-                'dv': '1',
-                'branches': [1, 3, 5]
+                "id": 1,
+                "name": "Empresa Uno",
+                "nit": "123456789",
+                "dv": "1",
+                "branches": [1, 3, 5],
             },
             {
-                'id': 2,
-                'name': 'Empresa Dos',
-                'nit': '987654321',
-                'dv': '2',
-                'branches': [2]
+                "id": 2,
+                "name": "Empresa Dos",
+                "nit": "987654321",
+                "dv": "2",
+                "branches": [2],
             },
             {
-                'id': 3,
-                'name': 'Empresa Tres',
-                'nit': '987654333',
-                'dv': '3',
-                'branches': [4]
-            }
-        ] 
+                "id": 3,
+                "name": "Empresa Tres",
+                "nit": "987654333",
+                "dv": "3",
+                "branches": [4],
+            },
+        ]
         return companies
-    
-    @statictmethod
+
+    @staticmethod
     def get_branches():
-        
+
         branches = [
+            {"id": 1, "name": "Sucursal Uno", "address": "Cll 123", "isMain": True},
             {
-                'id': 1,
-                'name': 'Sucursal Uno',
-                'address': 'Cll 123',
-                'isMain': True
+                "id": 2,
+                "name": "Sucursal Dos",
+                "address": "Cll 12 # 1-23",
+                "isMain": True,
             },
             {
-                'id': 2,
-                'name': 'Sucursal Dos',
-                'address': 'Cll 12 # 1-23',
-                'isMain': True
+                "id": 3,
+                "name": "Sucursal Tres",
+                "address": "Cll 1 # 11-23",
+                "isMain": False,
             },
             {
-                'id': 3,
-                'name': 'Sucursal Tres',
-                'address': 'Cll 1 # 11-23',
-                'isMain': False
+                "id": 4,
+                "name": "Sucursal Cuatro",
+                "address": "Cll 4 # 4-32",
+                "isMain": True,
             },
             {
-                'id': 4,
-                'name': 'Sucursal Cuatro',
-                'address': 'Cll 4 # 4-32',
-                'isMain': True
+                "id": 5,
+                "name": "Sucursal Cinco",
+                "address": "Cll 5 # 5-43",
+                "isMain": False,
             },
-            {
-                'id': 5,
-                'name': 'Sucursal Cinco',
-                'address': 'Cll 5 # 5-43',
-                'isMain': False
-            }
-        ]     
+        ]
         return branches
-    
-    @statictmethod
+
+    @staticmethod
     def get_thirds():
         thirds = [
             {
@@ -83,7 +75,7 @@ class Data:
                 "maidenname": "RAMIREZ",
                 "phone": "2129368",
                 "state": "ACTIVO",
-                "tradename": ""
+                "tradename": "",
             },
             {
                 "billAddress1": "CARRERA 59 NO 26 21",
@@ -98,7 +90,7 @@ class Data:
                 "maidenname": "",
                 "phone": "3159000",
                 "state": "ACTIVO",
-                "tradename": "POLICIA NACIONAL DE COLOMBIA"
+                "tradename": "POLICIA NACIONAL DE COLOMBIA",
             },
             {
                 "billAddress1": "CRA 8 NO 6 C 38",
@@ -113,7 +105,7 @@ class Data:
                 "maidenname": "",
                 "phone": "5462200",
                 "state": "ACTIVO",
-                "tradename": "DIAN"
+                "tradename": "DIAN",
             },
             {
                 "billAddress1": "CRA 15 NO. 134 A 25 APTO 406 CONTADOR",
@@ -128,7 +120,7 @@ class Data:
                 "maidenname": "GASCA",
                 "phone": "",
                 "state": "ACTIVO",
-                "tradename": ""
+                "tradename": "",
             },
             {
                 "billAddress1": "CRA 8 N 69-76",
@@ -143,7 +135,7 @@ class Data:
                 "maidenname": "GASCA",
                 "phone": "",
                 "state": "ACTIVO",
-                "tradename": ""
+                "tradename": "",
             },
             {
                 "billAddress1": "CRA 9 N 72-35",
@@ -158,7 +150,7 @@ class Data:
                 "maidenname": "",
                 "phone": "",
                 "state": "ACTIVO",
-                "tradename": "BANCO BBVA"
+                "tradename": "BANCO BBVA",
             },
             {
                 "billAddress1": "CR 66 A N 43 18",
@@ -173,7 +165,7 @@ class Data:
                 "maidenname": "",
                 "phone": "2200460",
                 "state": "ACTIVO",
-                "tradename": "FONDO ROTATORIO DE LA POLICIA"
+                "tradename": "FONDO ROTATORIO DE LA POLICIA",
             },
             {
                 "billAddress1": "AV CLL 26 N 51 50 PISO 5",
@@ -188,7 +180,7 @@ class Data:
                 "maidenname": "",
                 "phone": "2202880",
                 "state": "ACTIVO",
-                "tradename": "REGISTRADURIA NACIONAL DEL ESTADO CIVIL"
+                "tradename": "REGISTRADURIA NACIONAL DEL ESTADO CIVIL",
             },
             {
                 "billAddress1": "CARRERA 8 NO. 8 - 55",
@@ -203,7 +195,7 @@ class Data:
                 "maidenname": "",
                 "phone": "3424100",
                 "state": "ACTIVO",
-                "tradename": "MINISTERIO DE CULTURA"
+                "tradename": "MINISTERIO DE CULTURA",
             },
             {
                 "billAddress1": "CRA 8 NO 69 76",
@@ -218,7 +210,7 @@ class Data:
                 "maidenname": "",
                 "phone": "5658500",
                 "state": "ACTIVO",
-                "tradename": "CONSEJO SUPERIOR DE LA JUDICATURA"
+                "tradename": "CONSEJO SUPERIOR DE LA JUDICATURA",
             },
             {
                 "billAddress1": "CARRERA 50 # 18-06",
@@ -233,7 +225,7 @@ class Data:
                 "maidenname": "",
                 "phone": "3150111",
                 "state": "ACTIVO",
-                "tradename": "EJERCITO NACIONAL DIRECCION DE INGENIEROS"
+                "tradename": "EJERCITO NACIONAL DIRECCION DE INGENIEROS",
             },
             {
                 "billAddress1": "CRA 8 NO 69 76",
@@ -248,7 +240,7 @@ class Data:
                 "maidenname": "",
                 "phone": "3434140",
                 "state": "ACTIVO",
-                "tradename": "LA PREVISORA COMPAÑIA DE SEGUROS"
+                "tradename": "LA PREVISORA COMPAÑIA DE SEGUROS",
             },
             {
                 "billAddress1": "CRA 8 NO 69 76",
@@ -263,7 +255,7 @@ class Data:
                 "maidenname": "",
                 "phone": "485 17 17",
                 "state": "ACTIVO",
-                "tradename": "RED DE SALUD DEL CENTRO ESE"
+                "tradename": "RED DE SALUD DEL CENTRO ESE",
             },
             {
                 "billAddress1": "DIA 45 45 45",
@@ -278,7 +270,7 @@ class Data:
                 "maidenname": "",
                 "phone": "2451477",
                 "state": "ACTIVO",
-                "tradename": "CREAVISUAL SAS"
+                "tradename": "CREAVISUAL SAS",
             },
             {
                 "billAddress1": "CL 66 N 10 62 OFC 404",
@@ -293,7 +285,7 @@ class Data:
                 "maidenname": "",
                 "phone": "2129368",
                 "state": "ACTIVO",
-                "tradename": "CONSULTORIA JURIDICA CORPORATIVA"
+                "tradename": "CONSULTORIA JURIDICA CORPORATIVA",
             },
             {
                 "billAddress1": "1",
@@ -308,7 +300,7 @@ class Data:
                 "maidenname": "LOPEZ",
                 "phone": "",
                 "state": "ACTIVO",
-                "tradename": ""
+                "tradename": "",
             },
             {
                 "billAddress1": "CALLE 43 NO. 57 - 14",
@@ -323,7 +315,7 @@ class Data:
                 "maidenname": "",
                 "phone": "2222800",
                 "state": "ACTIVO",
-                "tradename": "MINISTERIO DE EDUCACION NACIONAL"
+                "tradename": "MINISTERIO DE EDUCACION NACIONAL",
             },
             {
                 "billAddress1": "CALLE 53 NO 3 06",
@@ -338,7 +330,7 @@ class Data:
                 "maidenname": "CRUZ",
                 "phone": "3214116869",
                 "state": "ACTIVO",
-                "tradename": ""
+                "tradename": "",
             },
             {
                 "billAddress1": "CRA 22 B NO 56 63",
@@ -353,7 +345,7 @@ class Data:
                 "maidenname": "QUINTERO",
                 "phone": "",
                 "state": "ACTIVO",
-                "tradename": ""
+                "tradename": "",
             },
             {
                 "billAddress1": "CRA 65 N 11 83",
@@ -368,119 +360,41 @@ class Data:
                 "maidenname": "",
                 "phone": "",
                 "state": "ACTIVO",
-                "tradename": "FONDO NACIONAL DEL AHORRO"
-            }
+                "tradename": "FONDO NACIONAL DEL AHORRO",
+            },
         ]
         return thirds
-    
-    @statictmethod
+
+    @staticmethod
     def get_colors():
         colors = [
-            {
-                "colorCode": "AMA",
-                "colorName": "AMARILLO"
-            },
-            {
-                "colorCode": "AZU",
-                "colorName": "AZUL"
-            },
-            {
-                "colorCode": "BLA",
-                "colorName": "BLANCO"
-            },
-            {
-                "colorCode": "CAR",
-                "colorName": "CARMELITA"
-            },
-            {
-                "colorCode": "FUS",
-                "colorName": "FUSCIA"
-            },
-            {
-                "colorCode": "NAR",
-                "colorName": "NARANJA"
-            },
-            {
-                "colorCode": "NEG",
-                "colorName": "NEGRO"
-            },
-            {
-                "colorCode": "PR",
-                "colorName": "PUPURAL"
-            },
-            {
-                "colorCode": "ROJ",
-                "colorName": "ROJO"
-            },
-            {
-                "colorCode": "ROS",
-                "colorName": "ROSADO"
-            },
-            {
-                "colorCode": "VER",
-                "colorName": "VERDE"
-            },
-            {
-                "colorCode": "VIO",
-                "colorName": "VIOLETA"
-            }
+            {"colorCode": "AMA", "colorName": "AMARILLO"},
+            {"colorCode": "AZU", "colorName": "AZUL"},
+            {"colorCode": "BLA", "colorName": "BLANCO"},
+            {"colorCode": "CAR", "colorName": "CARMELITA"},
+            {"colorCode": "FUS", "colorName": "FUSCIA"},
+            {"colorCode": "NAR", "colorName": "NARANJA"},
+            {"colorCode": "NEG", "colorName": "NEGRO"},
+            {"colorCode": "PR", "colorName": "PUPURAL"},
+            {"colorCode": "ROJ", "colorName": "ROJO"},
+            {"colorCode": "ROS", "colorName": "ROSADO"},
+            {"colorCode": "VER", "colorName": "VERDE"},
+            {"colorCode": "VIO", "colorName": "VIOLETA"},
         ]
         return colors
-    
-    @statictmethod
+
+    @staticmethod
     def get_items():
         items = [
-            {
-                'code': '001',
-                'name': 'Celular',
-                'color': 'BLA'
-            },
-            {
-                'code': '002',
-                'name': 'Camiseta',
-                'color': 'NEG'
-            },
-            {
-                'code': '003',
-                'name': 'Lapíz',
-                'color': 'NAR'
-            },
-            {
-                'code': '004',
-                'name': 'Lentes',
-                'color': None
-            },
-            {
-                'code': '005',
-                'name': 'Zapatos',
-                'color': 'ROS'
-            },
-            {
-                'code': '006',
-                'name': 'Vaso de cristal',
-                'color': None
-            },
-            {
-                'code': '007',
-                'name': 'Portail HP',
-                'color': 'ROJ'
-            },
-            {
-                'code': '008',
-                'name': 'Cuaderno',
-                'color': None
-            },
-            {
-                'code': '009',
-                'name': 'Gorra',
-                'color': 'VER'
-            },
-            {
-                'code': '010',
-                'name': 'Balón',
-                'color': None
-            }
+            {"code": "001", "name": "Celular", "color": "BLA"},
+            {"code": "002", "name": "Camiseta", "color": "NEG"},
+            {"code": "003", "name": "Lapíz", "color": "NAR"},
+            {"code": "004", "name": "Lentes", "color": None},
+            {"code": "005", "name": "Zapatos", "color": "ROS"},
+            {"code": "006", "name": "Vaso de cristal", "color": None},
+            {"code": "007", "name": "Portail HP", "color": "ROJ"},
+            {"code": "008", "name": "Cuaderno", "color": None},
+            {"code": "009", "name": "Gorra", "color": "VER"},
+            {"code": "010", "name": "Balón", "color": None},
         ]
         return items
-    
-    

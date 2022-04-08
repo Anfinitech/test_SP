@@ -4,3 +4,18 @@
   las sucursales que corresponden para cada empresa
 """
 
+
+from data import Data
+
+companies = Data.get_companies()
+branches = Data.get_branches()
+
+for company in companies:
+    branches_list = []
+    for branch_id in company["branches"]:
+        for branch in branches:
+            branches_list.append(branch) if branch["id"] == branch_id else None
+
+    company["branches"] = branches_list
+
+# companies contiene la lista de objetos que dan solución a esta prueba.
